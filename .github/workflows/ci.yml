@@ -1,0 +1,14 @@
+name: My First CI
+
+on: [push]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Κατέβασε τον κώδικα
+        uses: actions/checkout@v3
+
+      - name: Τρέξε ένα test
+        run: echo "Τα tests πέρασαν! ✅"
